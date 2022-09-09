@@ -16,17 +16,86 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+ :root {
+  --light-gray: rgba(117, 117, 117, 0.9);
+  --dark-gray: rgba(117, 117, 117, 1);
+  --light-blue: rgba(39, 123, 192, 0.9);
+  --dark-blue: rgba(39, 123, 192, 1);
+  --light-green: rgba(0, 152 , 95, 0.9);
+  --dark-green: rgba(0, 152 , 95, 1.0);
+}
+
  body{
   background: #f3f3f3;
   font-family: 'Poppins', sans-serif;
+ }
+
+ h2{
+  text-align: center;
+  padding: 0;
+  padding: 30px 0;
+  font-weight: 700;
+  margin: 0;
+ }
+
+ input[type=email], input[type=password]{
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 100%;
+ }
+
+ .field{
+  margin-bottom: 20px;
+  min-width: 300px;
+  color: var(--dark-gray);
+ }
+
+ hr {
+  background: var(--light-gray);
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: var(--light-blue);
+}
+
+a:hover{
+  color: var(--dark-blue);
+}
+
+ /* Devise */
+ .devise-link{
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+ }
+
+ .devise-text{
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: var(--dark-gray);
+  margin-top: 15px;
  }
 
  .col-box{
   background: white;
   border-radius: 25px;
   margin: 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
  }
 
+/* Navbar */
  .navbar-brand{
   font-weight: 700;
   font-size: 26px;
@@ -39,4 +108,25 @@
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0rem;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 15px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.btn-success{
+  background-color: var(--light-green);
+  border: none;
+}
+
+.btn-success:hover{
+  background-color: var(--dark-green);
+}
+
+.full-width-btn {
+  width: 100%;
+  margin-bottom: 20px;
 }
