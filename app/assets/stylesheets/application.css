@@ -66,6 +66,11 @@ a:hover{
   color: var(--dark-blue);
 }
 
+.alert{
+  border: none;
+  border-radius: 15px;
+}
+
  /* Devise */
  .devise-link{
   display: block;
