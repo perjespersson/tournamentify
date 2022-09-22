@@ -70,6 +70,15 @@ a:hover{
 .alert{
   border: none;
   border-radius: 15px;
+  padding: 10;
+}
+
+.alert li{
+  padding: 5px 0;
+}
+
+.alert ul{
+  margin-bottom: 0;
 }
 
  /* Devise */
