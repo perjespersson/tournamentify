@@ -1,7 +1,32 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-12 col-box">
-      <h1>Welcome back <%= current_user.email %></h1>
+    <h1>Welcome back, <%= current_user.username %>!</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 no-padding-left">
+      <div class="col col-box">
+        <h5>Latest game</h5>
+        <hr />
+
+        <p>0 - 3</p>
+      </div>
     </div>
+
+    <div class="col-lg-6 no-padding-right">
+      <div class="col col-box">
+        <h5>Latest Tournament</h5>
+        <hr />
+
+        <p>0 - 3</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="background-color: var(--light-green)">
+    <h3>THIS IS A TEST</h3>
+    <h4>THIS IS A TEST</h4>
+    <h3>THIS IS A TEST</h3>
+    <h4>THIS IS A TEST</h4>
   </div>
 </div>
