@@ -141,3 +141,77 @@ a:hover{
   width: 100%;
   margin-bottom: 20px;
 }
+
+/****************** Text ******************/
+
+h1{
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  padding: 60px 0;
+ }
+
+ h2{
+  text-align: center;
+  padding: 0;
+  padding: 30px 0;
+  font-weight: 700;
+  margin: 0;
+ }
+
+ h3{
+  font-size: 70px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+ }
+
+ h4{
+  font-size: 70px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: white;
+ }
+
+ h5{
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 26px;
+ }
+
+ /****************** Profile ******************/
+
+ .latest-game{
+  font-size: 50px;
+ }
+
+ .latest-game .score{
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  border-right: 3px solid black;
+ }
+
+ .latest-game .team{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 20px;
+ }
+
+/****************** Row ******************/
+.row .no-margin{
+  margin: 0;
+}
+
+/****************** Container ******************/
+.container{
+  margin-top:20px;
+}

@@ -1,19 +1,85 @@
-<div class="container">
-  <div class="row">
-    <h1>Welcome back, <%= current_user.username %>!</h1>
+<div class="row">
+  <h1>Welcome back, <%= current_user.username %>!</h1>
+</div>
+
+<div class="row col-box">
+  <div class="col-12">
+    <%= image_tag "https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/avatar-512.png", :style => "display: block; width: 250px; margin: 0 auto;" %>
   </div>
 
+  <div class="col-12">
+    <b><p style="text-align: center; font-size: 20px; margin: 0;">perjespersson</p></b>
+  </div>
+
+  <div class="col-12">
+    <p style="text-align: center; font-size: 20px; margin: 0;">perjespersson@gmail.com</p>
+  </div>
+
+  <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Statistics</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Settings</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Det</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Funkar</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Ju</div>
+  </div>
+
+<!--
+  <div class="d-flex justify-content-center">
+    <%= link_to "Create tournament", "#", class: "btn btn-primary" %>
+    <%= link_to "Create game", "#", class: "btn btn-secondary" %>
+  </div>
+-->
+
+  <hr />
+
   <div class="row">
-    <div class="col-lg-6 no-padding-left">
-      <div class="col col-box">
+    <div class="col-lg-4 no-padding-left">
+      <div class="col col-box latest-game">
         <h5>Latest game</h5>
+        <hr />
+
+        <div class="row no-margin">
+          <div class="col-2 score">
+            <p>3</p>
+          </div>
+
+          <div class="col-10 team" style="align-items: center">
+            <p>perjespersson</p>
+          </div>
+        </div>
+
+        <div class="row no-margin">
+          <div class="col-2 score">
+            <p>1</p>
+          </div>
+
+          <div class="col-10 team">
+            <p>fjunemeister</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="col col-box">
+        <h5>Latest Tournament</h5>
         <hr />
 
         <p>0 - 3</p>
       </div>
     </div>
 
-    <div class="col-lg-6 no-padding-right">
+    <div class="col-lg-4 no-padding-right">
       <div class="col col-box">
         <h5>Latest Tournament</h5>
         <hr />
@@ -23,10 +89,12 @@
     </div>
   </div>
 
+<!--
   <div class="row" style="background-color: var(--light-green)">
     <h3>THIS IS A TEST</h3>
     <h4>THIS IS A TEST</h4>
     <h3>THIS IS A TEST</h3>
     <h4>THIS IS A TEST</h4>
   </div>
+  -->
 </div>
