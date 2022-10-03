@@ -17,6 +17,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap');
 
  :root {
+  --light-black: #303030;
+  --dark-black: #000000;
   --light-gray: rgba(117, 117, 117, 0.9);
   --dark-gray: rgba(117, 117, 117, 1);
   --light-blue: rgba(39, 123, 192, 0.9);
@@ -214,4 +216,24 @@ h1{
 /****************** Container ******************/
 .container{
   margin-top:20px;
+}
+
+/****************** Tab ******************/
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: var(--light-black);
+  font-weight: 800;
+}
+
+.nav-link:hover {
+  padding: 0.5rem 1rem;
+  color: var(--dark-black);
+  font-weight: 800;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: var(--light-green);
+  border-bottom: 3px solid #00995F;
+  border-radius: 0px;
+  background-color: transparent;
 }
