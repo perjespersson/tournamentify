@@ -1,11 +1,40 @@
 <div class="col-lg-6">
   <div class="col col-box">
-    <h5>Latest Tournament</h5>
-    <hr />
+    <%= render "welcome/partials/winning_rate" %>
   </div>
 </div>
 
 <div class="col-lg-6">
+  <div class="col col-box">
+    <%= render "welcome/partials/goal_difference" %>
+  </div>
+</div>
+
+<div class="col-lg-6" style="margin-top: 15px">
+  <div class="col col-box">
+    <h5>Latest Tournament</h5>
+    <hr />
+
+    <div class="row">
+      <div class="col-lg-4">
+        <p style="font-size: 46px; text-align: center; font-weight: 700; margin-bottom: 0px;">3</p>
+        <p style="text-align: center">Position</p>
+      </div>
+
+      <div class="col-lg-4">
+        <p style="font-size: 46px; text-align: center; font-weight: 700; margin-bottom: 0px;">4</p>
+        <p style="text-align: center">Points</p>
+      </div>
+
+      <div class="col-lg-4">
+        <p style="font-size: 46px; text-align: center; font-weight: 700; margin-bottom: 0px;">+4</p>
+        <p style="text-align: center">Goal difference</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-6" style="margin-top: 15px">
   <div class="col col-box">
     <h5>Latest Game</h5>
     <hr />
@@ -28,5 +57,17 @@
         <p style="margin-top: 10px; font-weight: 500;">Fjune IF</p>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="col-lg-6" style="margin-top: 15px">
+  <div class="col col-box" style="padding: 0px 15px;">
+    <button type="button" class="btn btn-primary full-width-btn" style="margin: 15px 0; background: #016d9e;">NEW TOURNAMENT</button>
+  </div>
+</div>
+
+<div class="col-lg-6" style="margin-top: 15px">
+  <div class="col col-box" style="padding: 0px 15px;">
+    <button type="button" class="btn btn-primary full-width-btn" style="margin: 15px 0; background: #016d9e;">NEW GAME</button>
   </div>
 </div>
