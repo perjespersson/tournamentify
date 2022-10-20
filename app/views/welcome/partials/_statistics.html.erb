@@ -1,61 +1,29 @@
-<div class="col-lg-6">
+<div class="col-lg-4">
   <div class="col col-box">
     <%= render "welcome/partials/winning_rate" %>
   </div>
 </div>
 
-<div class="col-lg-6">
+<div class="col-lg-4">
+  <div class="col col-box">
+    <%= render "welcome/partials/trophies" %>
+  </div>
+</div>
+
+<div class="col-lg-4">
   <div class="col col-box">
     <%= render "welcome/partials/goal_difference" %>
   </div>
 </div>
 
-<div class="col-lg-6" style="margin-top: 15px">
+<div class="col-lg-6" style="margin-top: 10px;">
   <div class="col col-box">
-    <h5>Latest Tournament</h5>
-    <hr />
-
-    <div class="row">
-      <div class="col-lg-4">
-        <p style="font-size: 46px; text-align: center; font-weight: 700; margin-bottom: 0px;">3</p>
-        <p style="text-align: center">Position</p>
-      </div>
-
-      <div class="col-lg-4">
-        <p style="font-size: 46px; text-align: center; font-weight: 700; margin-bottom: 0px;">4</p>
-        <p style="text-align: center">Points</p>
-      </div>
-
-      <div class="col-lg-4">
-        <p style="font-size: 46px; text-align: center; font-weight: 700; margin-bottom: 0px;">+4</p>
-        <p style="text-align: center">Goal difference</p>
-      </div>
-    </div>
+    <%= render "welcome/partials/latest_game" %>
   </div>
 </div>
 
-<div class="col-lg-6" style="margin-top: 15px">
+<div class="col-lg-6" style="margin-top: 10px;">
   <div class="col col-box">
-    <h5>Latest Game</h5>
-    <hr />
-
-    <div class="d-flex align-items-center">
-      <div style="width: calc(50% - 50px); text-align: center;">
-        <%= image_tag "https://media-exp1.licdn.com/dms/image/C4E03AQGbwKzAEOvEQw/profile-displayphoto-shrink_800_800/0/1616091200685?e=1670457600&v=beta&t=ptcCFukzOKp-FOR4K7_MwgY4dnB8GHheGEsI5sVpL0c", :style => "display: block; width: 50px; margin: 0 auto; border-radius: 50%;" %>
-        <p style="margin-top: 10px; font-weight: 500;">FC Jesper</p>
-      </div>
-
-
-      <div style="width: 120px; text-align: center; font-weight: 600;">
-        <span class="badge rounded-pill bg-secondary">Copa de Malmö</span>
-        <p style="font-size: 36px;">3-0</p>
-      </div>
-
-
-      <div style="width: calc(50% - 50px); text-align: center;">
-        <%= image_tag "https://media-exp1.licdn.com/dms/image/C4D03AQFNHfzPWMfVFA/profile-displayphoto-shrink_800_800/0/1582667219303?e=1671062400&v=beta&t=nR6uzUbsgz10ayqaUdJvWG-E7xhefS6Mju79Jk_IsLY", :style => "display: block; width: 50px; margin: 0 auto; border-radius: 50%;" %>
-        <p style="margin-top: 10px; font-weight: 500;">Fjune IF</p>
-      </div>
-    </div>
+    <%= render "welcome/partials/latest_tournament" %>
   </div>
 </div>
