@@ -1,0 +1,13 @@
+<div class="wrapper col-box">
+  <h1>Create tournament</h1>
+
+
+  <%= form_with url: tournament_path, method: :post do |form| %>
+    <%= form.text_field :name, placeholder: "Namn", required: true %>
+
+    <%= form.collection_select :user_ids, @users, :id, :username, {}, {multiple: true, required: false} %>
+
+    <%= form.number_field :rounds, min: 1, value: 1 %>
+    <%= form.submit "Create" %>
+  <% end %>
+</div>
