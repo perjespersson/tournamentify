@@ -30,3 +30,11 @@
     <% end %>
   </tbody>
 </table>
+
+<hr />
+
+<% @games.each do |game| %>
+  <p><%= game.inspect %>
+<% end %>
+
+<%= will_paginate @games %>
