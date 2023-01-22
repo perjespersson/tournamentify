@@ -18,12 +18,19 @@ class TournamentsController < ApplicationController
 
   def show
     @tournament = Tournament.find(params[:id])
+
+    per_page = @tournament.games.where(round: 1).count
+    round_page = params[:page].present? ? params[:page] : upcoming_game_page(@tournament.games)
+
     @table = ActiveRecord::Base.connection.execute(table_query)
-    @per_page = @tournament.games.where(round: 1).count
-    @games = @tournament.games.order('round ASC').page(params[:page]).per_page(@per_page)
+    @games = @tournament.games.order('round ASC').page(round_page).per_page(per_page)
   end
 
   private
+
+  def upcoming_game_page(games)
+    games.find{ |game| game.home_team_score.nil? || game.away_team_score.nil?}.round
+  end
 
   def generated_games
     @generated_games ||= TournamentGenerator.new(params[:user_ids].reject(&:empty?), params[:rounds]).generate_games
