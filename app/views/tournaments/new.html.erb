@@ -2,7 +2,7 @@
   <h1>Create tournament</h1>
 
 
-  <%= form_with url: tournament_path, method: :post do |form| %>
+  <%= form_with url: tournaments_path, method: :post do |form| %>
     <%= form.text_field :name, placeholder: "Namn", required: true %>
 
     <%= form.select :user_ids, User.pluck(:username, :id), {}, {multiple: true, include_blank: false, data: {controller: "slim"}} %>

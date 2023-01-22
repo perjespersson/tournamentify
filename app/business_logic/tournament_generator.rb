@@ -1,11 +1,12 @@
 class TournamentGenerator
-  def initialize(users)
+  def initialize(users, rounds)
     @users = users.count.even? ? users : users << nil
+    @rounds = rounds.to_i
   end
 
   def generate_games
     games = []
-    number_of_games_per_user.times do |round|
+    (number_of_games_per_user * @rounds).times do |round|
       # Split array into half
       split_users = @users.each_slice(games_per_round).to_a
 

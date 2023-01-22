@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   resource :welcome, only: [:index]
-  resource :tournament, only: [:new, :create]
+  resources :tournaments, only: [:new, :create, :show]
 end

@@ -1,0 +1,32 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Lag</th>
+      <th scope="col">SM</th>
+      <th scope="col">VM</th>
+      <th scope="col">OM</th>
+      <th scope="col">FM</th>
+      <th scope="col">GM</th>
+      <th scope="col">IM</th>
+      <th scope="col">MS</th>
+      <th scope="col">P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @table.each_with_index do |row, index| %>
+      <tr>
+        <th scope="row"><%= index + 1 %></th>
+        <td><%= row["username"] %></td>
+        <td><%= row["played_games"] %></td>
+        <td><%= row["won_games"] %></td>
+        <td><%= row["tied_games"] %></td>
+        <td><%= row["lost_games"] %></td>
+        <td><%= row["scored_goals"] %></td>
+        <td><%= row["conceded_goals"] %></td>
+        <td><%= row["goal_difference"] %></td>
+        <td><%= row["points"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
