@@ -19,7 +19,8 @@ class TournamentsController < ApplicationController
   def show
     @tournament = Tournament.find(params[:id])
     @table = ActiveRecord::Base.connection.execute(table_query)
-    @games = @tournament.games.order('round ASC').page(params[:page]).per_page(2)
+    @per_page = @tournament.games.where(round: 1).count
+    @games = @tournament.games.order('round ASC').page(params[:page]).per_page(@per_page)
   end
 
   private
