@@ -6,7 +6,7 @@ class TournamentsController < ApplicationController
   def create
     @tournament = Tournament.new(name: params[:name])
     generated_games.each do |game|
-      Game.create(home_team_id: game[0], away_team_id: game[1], round: game[2], tournament: @tournament)
+      @tournament.games.build(home_team_id: game[0], away_team_id: game[1], round: game[2], tournament: @tournament)
     end
 
     if @tournament.save
