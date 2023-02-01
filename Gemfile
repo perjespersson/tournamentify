@@ -74,3 +74,5 @@ end
 ### Manually added ###
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'will_paginate', '~> 3.3.0'
+gem 'nokogiri', '~> 1.14', '>= 1.14.1'
+gem 'open-uri', '~> 0.3.0'
