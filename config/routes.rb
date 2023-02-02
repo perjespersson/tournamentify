@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   resource :welcome, only: [:index]
   resources :tournaments, only: [:new, :create, :show]
+  resources :fifa_teams, only: [:index]
 end
